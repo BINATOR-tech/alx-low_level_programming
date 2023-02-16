@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -s $CFIL.cpp 
+gcc -o $CFILE .s 
