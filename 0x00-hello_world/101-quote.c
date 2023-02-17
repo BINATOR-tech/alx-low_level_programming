@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - A program that prints the exact line
+ * main - Entry point
+ * Description:	A program that prints the exact line
  *
- * Return 1 (Success)
+ * Return: 1 (Success)
  */
 int main(void)
 {
