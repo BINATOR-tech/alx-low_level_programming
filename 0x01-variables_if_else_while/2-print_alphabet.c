@@ -9,6 +9,8 @@
 
 int main(void)
 {
+	char c;
+
 	for (char c = 'a'; c != 'z'; c++)
 	putchar(c);
 	putchar ('\n"):
