@@ -1,10 +1,9 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * main - A program will assign a random number to the variable
+ * main - main function
  *
- *Return 0 (Success)
+ *Return: Always 0
  */
 
 int main(void)
