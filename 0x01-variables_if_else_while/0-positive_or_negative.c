@@ -5,7 +5,7 @@
 /**
  * main - Print whether the number in the variableis is positive or negative
  *
- * Return 0 Success
+ * Return: 0 (Success)
  */
 int main(void)
 {
