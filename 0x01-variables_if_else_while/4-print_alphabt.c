@@ -13,9 +13,9 @@ int main(void)
 	/* your code goes there */
 	char j;
 
-	for (j = 'a'; j != 'z'; j++)
-		if (j != 'p' && j != 'e')
+	for (j = 'a'; j <= 'z'; j++)
+		if (j != 'q' && j != 'e')
 		putchar(j);
-		putchar('|');
+		putchar('\n');
 		return (0);
 }
