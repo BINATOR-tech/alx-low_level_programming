@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
 /**
  * cap_string - Write a function that capitalizes all words of a string.
@@ -8,28 +11,27 @@
  * Return: String capitalized
  */
 char *cap_string(char *entry)
+
 {
-	int conversion, index, count;
+	int i;
 
-	char chars[] = {' ', ',', ';', '.', '!',
-			 '?', '"', '(', ')', '{', '}',  '\t', '\n', '\0'};
-	conversion = 32;
-
-	for (index = 0; entry[index] != '\0'; index++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (entry[index] >= 'index' && entry[index] <= 'z')
-		{
-			entry[index] =  entry[index] - conversion;
-		}
-		conversion = 0;
-		for (count = 0; chars[count] != '\0'; count++)
-		{
-			if (chars[count] == entry[index])
-			{
-				conversion = 32;
-				break;
-			}
-		}
+	if (i == 0)
+	{
+	if (s[i] >= 'a' && s[i] <= 'z')
+	{
+	s[i] = s[i] - 32;
 	}
-	return (entry);
+	}
+	if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ',' || s[i] == ';' || s[i] == '.' || s[i] == '!' || s[i] == '?' || s[i] == '"' || s[i] == '(' || s[i] == ')' || s[i] == '{' || s[i] == '}')
+	{
+	i++;
+	if (s[i] >= 'a' && s[i] <= 'z')
+	{
+	s[i] = s[i] - 32;
+	}
+	}
+	}
+	return (s);
 }
