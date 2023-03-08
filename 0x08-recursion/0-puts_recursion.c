@@ -5,13 +5,10 @@
  * _puts_recursion - Prints a string followed by a new line.
  * @s: string
  *
- * Return: Alaways 0
+ * Return: Always 0
  */
 void _puts_recursion(char *s)
 {
-	char str[*s];
-
-	printf("*s");
-	puts(str);
-	printf("\n");
+	if (*s == 0)
+	puts("\n");
 }
